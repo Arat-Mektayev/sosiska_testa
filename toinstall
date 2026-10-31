@@ -1,0 +1,1 @@
+pyinstaller.exe --onefile --noconsole "Negotiator/gui_app.py"

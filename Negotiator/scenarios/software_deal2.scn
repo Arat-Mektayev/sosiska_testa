@@ -1,0 +1,24 @@
+{
+	"title": "Продажа оборудования",
+	"description": "Компания продает подержанное оборудование. Простые переговоры по цене и срокам.",
+	"items": ["price", "deadline"],
+	"difficulty": "easy",
+	"events": [
+		{"round": 2, "effect": "urgency_buyer", "description": "Грант закрывается скоро"},
+		{"round": 4, "effect": "pressure_seller", "description": "Поставщик нуждается в срочной оплате"}
+	],
+	"agents": {
+		"agent_a": {
+			"name": "ОборудМастер",
+			"batna": {"price": 50000, "deadline": 10},
+			"role": "seller",
+			"weights": {"price": 0.8, "deadline": 0.2}
+		},
+		"agent_b": {
+			"name": "МалыйБизнес",
+			"batna": {"price": 66000, "deadline": 15},
+			"role": "buyer",
+			"weights": {"price": 0.7, "deadline": 0.3}
+		}
+	}
+}
